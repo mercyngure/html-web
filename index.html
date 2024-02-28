@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MAZDA</title>
+    <style>
+    
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            background-color: black;
+        }
+
+        ul {
+            list-style: none;
+            padding: 10px;
+            margin: 1;
+            text-align: right;
+            text-align: top;
+            background: black;
+        }
+
+        li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        hr {
+            background-color: black;
+        }
+
+        .text {
+            background:black;
+        
+        }
+
+        h2 {
+            text-align: center;
+            border-radius: 30px;
+            border-color: aqua;
+            background: white;
+            margin: 0px;
+            padding: 10px;
+        }
+
+        h3 {
+            margin: 5px auto;
+            padding: 10px;
+            background: white;
+            justify-content: space-between;
+            color: green;
+        }
+
+        img{
+            float: right;
+            width: 300px;
+            background: antiquewhite;
+        }
+
+        .diva{
+            width: 80%;
+            height: 40%;
+            font-size: medium;
+            border-radius: 10px;
+            padding: 0px;
+            border-width: 30px;
+            margin: 10px;
+            padding: 30px;
+            position: relative;
+    
+    
+        }
+        hr{
+            margin: 20px;
+        }
+        button{
+          display: block;
+          margin:0 auto;
+          padding: 10px;
+          border-radius:10px;
+          cursor: pointer;
+          background: linear-gradient(30deg,aqua,blue);
+        }
+        .button:hover{
+            text-shadow: 0px 5px 5px white;
+            color: pink;
+            border-radius: 20px;
+            box-shadow: 0px 2px 5px rgb(218, 7, 60);
+            transition: 200ms;
+        }
+        .text_copy{
+            text-align: center;
+            color: white;
+        }
+        .secondary{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .secondary:hover{
+            filter: grayscale(100%);
+            cursor: pointer;
+            scale: 1.1;
+        }
+        .footer{
+        text-align: center;
+        opacity: 50%;
+        transition: ease-in-out;
+        padding: 30px;
+        margin: 10px;
+        }
+
+ </style>
+</head>
+
+<body>
+    <div class="container">
+       <div class="text">
+       <h1>MAZDA MOTORS</h1>
+        <ul>
+            <li><a href="Home"> Home</a></li>
+            <li><a href="Inventory">Inventory</a></li>
+            <li><a href="About Us">About Us</a></li>
+            <li> <a href="Contact us">Contact Us</a></li>
+        </ul>
+    </div>
+    
+    <h2><em>Mazda Models</em></h2>
+    <hr>
+    <h3><strong><u>Mazda Axela</u>  &nbsp  &nbsp  <u>Mazda Cx5</u>  &nbsp  &nbsp  <u>Mazda Cx3</u>  &nbsp &nbsp  <u>Mazda Demio</u></strong></h3>
+     <div class="diva">
+     <img src="axela.jpeg"/>
+    <p>This is one of the best hatchbacks in Kenya. <br>It features an elegant design, great interior
+                design, <br> an impressive suite of standard features, great engines <br> and a smooth driving
+                experience. We have a variety of<br> Mazda Axela for sale in Nairobi that are dealer certified.
+         </p>
+    </div>
+    <br>
+        <hr>
+        <button class="purchase-button">purchase your dream car🚗</button>
+        <p class=""><strong>Similar vehicles</strong><br>
+            People who viewed the Mazda Axela also considered</p>
+    <div class="secondary">
+         <img src="https://dashboard.kaiandkaro.com/media/vehicles/thumbnails/IMG-20230630-WA0276.jpg">
+         <img src="https://dashboard.kaiandkaro.com/media/vehicles/thumbnails/eac59669-ebc3-417b-901b-1a828617ac54.jpeg">
+         <img src="https://dashboard.kaiandkaro.com/media/vehicles/thumbnails/WhatsApp_Image_2023-04-11_at_13.08.28.jpeg"></div>
+    </div>
+        <p class="footer">This page was built by 
+            <a href="https://www.mercy.io/" target="_blank"> Mercy Ngure </a></p>
+<script>
+   function purchase() {
+        let car = prompt("Which car do you want?");
+        let phonenumber = prompt("What is your phone number?");
+
+        alert(
+          "Thank you, " +
+            name +
+            "! We'll contact you, meanwhile check out other similar cars!"
+        );
+      }
+
+      let purchasebutton = document.querySelector(".purchase-button");
+      purchasebutton.addEventListener("click", purchase);
+
+</script>
+</body>
+</html>
